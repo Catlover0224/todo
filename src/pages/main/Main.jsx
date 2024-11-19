@@ -1,25 +1,25 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import S from '../layout/style';
 import BasicButton from '../../components/button/BasicButton';
+import S from './style';
 
 const Main = () => {
     console.log("🚀 ~ Main ~ process.env.PUBLTC_URL:", process.env.PUBLTC_URL);
 
     return (
         <S.Wrapper>
-            <div className='imageWrapper'>
-                <img src={process.env.PUBLIC_URL + "/images/main/penguin.png.png"} alt="cat"></img>
-            </div>
+            <S.ImageWrapper>
+                <img src={process.env.PUBLIC_URL + "/images/main/dog.png.png"} alt="cat"></img>
+            </S.ImageWrapper>
 
-            <div className='buttonWrapper'>
+            <S.ButtonWrapper>
                 <Link to={'/signIn'}>
-                    <BasicButton>로그인</BasicButton>
+                    <BasicButton size={'full'} shape={'small'} variant={'black'} color={'white'}>로그인</BasicButton>
                 </Link>
                 <Link to={'/signUp'}>
-                    <BasicButton>회원가입</BasicButton>
+                    <BasicButton size={'full'} shape={'small'} variant={'black'} color={'white'}>회원가입</BasicButton>
                 </Link>
-            </div>
+            </S.ButtonWrapper>
         </S.Wrapper>
     );
 };

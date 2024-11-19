@@ -9,7 +9,7 @@ const Layout = () => {
         <S.Background>
             <S.Wrapper className='wrapper'>
                 <S.Header className='header'>
-                    <Link to={'/todo'}> kong todo</Link>
+                    <Link to={'/todo'}> Kong Todo</Link>
                 </S.Header>
 
                 <S.Main>

@@ -4,6 +4,7 @@ theme.PALLETE = {
   primary: {
     main: "#ffd159",
     sub: "#fff4d8",
+    black: "#000",
   },
   secondary: "#f1ebf5",
   white: "#fff",
