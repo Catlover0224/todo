@@ -16,6 +16,11 @@ const S = {};
   S.Title = styled.p`
     font-size: 16px;
     font-weight: 400;
+
+    & .complete {
+      text-decoration: line-through;
+      color: #6A6EED;
+    }
   `
 
   S.SubTitle = styled.p`

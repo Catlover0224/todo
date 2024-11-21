@@ -31,7 +31,7 @@ const TodoContainer = () => {
     return (
         <div>
             <TodoInsert isTodoUpdate={isTodoUpdate} handleIsTodoUpdate={handleIsTodoUpdate} />
-            <p className="subTitle">남은 할일 : <span>{todoList && todoList.length}</span></p>
+            <p className="subTitle">남은 할일 : <span>{todoList && todoList.filter(({isChecked}) => !isChecked).length}</span></p>
             <ul>
                 {todoList && todoList.map((todo, i) => (
                     <Todo isTodoUpdate={isTodoUpdate} handleIsTodoUpdate={handleIsTodoUpdate} todo={todo} key={i} />

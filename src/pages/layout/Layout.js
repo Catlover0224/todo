@@ -7,9 +7,9 @@ import S from './style';
 const Layout = () => {
     return (
         <S.Background>
-            <S.Wrapper className='wrapper'>
-                <S.Header className='header'>
-                    <Link to={'/todo'}> Kong Todo</Link>
+            <S.Wrapper>
+                <S.Header>
+                    <Link to={'/todo'}> 집에가고싶어</Link>
                 </S.Header>
 
                 <S.Main>
